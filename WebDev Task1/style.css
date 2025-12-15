@@ -1,0 +1,173 @@
+/* Basic Reset and Google Fonts Setup */
+body {
+    font-family: 'Roboto', sans-serif; /* Optional: Use Google Fonts  */
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    /* CSS Requirement: Make the profile card centered [cite: 21] */
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Card Styling */
+.profile-card {
+    /* CSS Requirement: Style the card layout [cite: 19] */
+    width: 90%; 
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    /* CSS Requirement: Add borders and background colors [cite: 20] */
+    border: 1px solid #ddd; 
+    padding: 20px;
+    
+    /* Optional: Add a simple box-shadow to the card  */
+    box-shadow: 0 4px 8px rgba(28, 47, 121, 0.1); 
+    text-align: center;
+}
+
+/* Header Section */
+.card-header {
+    /* CSS Requirement: Add spacing [cite: 20] */
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #eee;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* CSS Requirement: Add borders [cite: 20] */
+    border: 3px solid #1b106b; 
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.title {
+    color: #2814c3;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+
+/* Details Section (Skills/Stats) */
+.details-section {
+    text-align: left;
+    /* CSS Requirement: Add spacing [cite: 20] */
+    padding: 15px 0; 
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.college {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.college li{
+    background-color: #69d5a8;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.organization {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.organization li{
+    background-color: #69d5a8;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.skills-list li {
+    background-color: #dfe6e9;
+    /* CSS Requirement: Add spacing [cite: 20] */
+    padding: 5px 10px; 
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    /* CSS Requirement: Add borders [cite: 20] */
+    border: 1px solid #f0f0f0; 
+    padding: 8px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+th {
+    /* CSS Requirement: Add background colors [cite: 20] */
+    background-color: #f8f8f8; 
+}
+
+.highlight {
+    font-weight: 700;
+    color: #d63031;
+}
+
+/* Form Styling */
+.contact-form {
+    /* CSS Requirement: Add spacing [cite: 20] */
+    padding-top: 20px; 
+    border-top: 1px solid #eee;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    /* CSS Requirement: Add spacing and borders [cite: 20] */
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.submit-btn {
+    width: 100%;
+    color: white;
+    /* CSS Requirement: Add background colors [cite: 20] */
+    background-color: #ab5fe1; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    /* CSS Requirement: Add hover effects for the button [cite: 22] */
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #4a3fa0;
+}
